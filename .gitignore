@@ -3,11 +3,12 @@
 *.bcf
 *.blg
 *.log
-*.pdf
+#*.pdf
+main.pdf
 *.xml
 *.gz
 *.toc
-*.png
+#*.png
 *.tdo
 *.out
 
