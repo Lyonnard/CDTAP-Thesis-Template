@@ -1,0 +1,21 @@
+\section{Code examples}
+\label{sec:code_examples}
+
+You can input equations like this if you want them on their own line:
+\begin{equation}\label{eq:Q_def}
+	\boxed{Q=\frac{\omega}{\Delta \omega_\mathrm{FWHM}}=\mathcal{F} \cdot \frac{\omega}{\Delta \omega_\mathrm{FSR}}}
+\end{equation}
+
+Note the \verb|\label{}| that permits to reference the equation everywhere. For example here \cref{eq:Q_def}. The equations can be inline $ Q=\frac{\omega}{2 \gamma} $.
+
+You can include images and refer to them as shown in \cref{fig:turtle}.
+
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.8\textwidth]{./fig/ch2/tirturtle.jpg}
+	\caption{\label{fig:turtle} A picture of a sea turtle showing a wonderful animal and the effect on total internal reflection on the surface of the sea.}
+\end{figure}
+
+You can use the package chemformula to quickly input material names like this \ch{CaF2}.
+
+It is a good idea to use the \verb|siunitx| package for the quantities since it prevents the number splitting from the unit, reduces the space between the two and can format strange units correctly. An example is \SI{0.5}{\micro m / \celsius}.

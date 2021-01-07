@@ -1,0 +1,76 @@
+\documentclass[12pt,oneside]{report} %12pt required by Heriot-Watt rules
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{csquotes} % recomended when using babel + biblatex
+
+\usepackage[left=4cm, right=2cm, top=2cm,bottom=2cm, paper=a4paper]{geometry} %these are the HW margins
+\linespread{1.5} % 1.5 line spacing required by HW
+
+\usepackage{physics} % provides lots of nice features and commands often used in physics, it also loads some other packages (like AMSmath)
+\usepackage{siunitx} % typesets numbers with units very nicely (use \SI{value}{unit commands})
+\usepackage{enumerate} % allows customizing our lists
+\usepackage{enumitem} % allows customizing our lists
+\usepackage{amssymb} %used for \mathbb
+\usepackage{amsmath} %used for \mathbb and the boxed equations
+\usepackage{mathtools}
+\usepackage{chemformula}%for chemical equations
+
+%customize captions
+\usepackage[labelfont=bf,textfont=it,margin=0.5in]{caption}
+\usepackage{setspace} %needed for \stretch
+\captionsetup{font={stretch=1}} %reduce the spacing in captions
+
+\usepackage{graphicx} % used to place images
+\usepackage{float} %provide extra options for figure placing
+\usepackage[section]{placeins} %this forces figures to not leave a section
+\usepackage{booktabs} %for toprule, midrule and bottomrule
+\usepackage{epigraph} %used for quotes and dedication
+
+\usepackage[toc,page]{appendix}
+\usepackage{pdfpages} % to include the documents required by HW uni
+
+\usepackage{hyperref} % for clickable references across the document
+\usepackage[capitalise]{cleveref} %for references usign \cref{label}
+
+
+\usepackage{dsfont} %to write the real numbers symbol
+\usepackage{tikz-cd} %for fancy arrows
+
+\usepackage[citestyle=numeric, backend=biber, sorting=none, bibencoding=utf8]{biblatex}
+\addbibresource{./Bibliography.bib}
+
+\usepackage{excludeonly} %to exclude just an include
+%\excludeonly{./tex/ch6-notes} %to remove chapters
+%\includeonly{./tex/titlepage2} %to include only a chapter (useful for revisions)
+
+\renewcommand{\real}{\ensuremath{\mathds{R}}} % better real number symbol
+\newcommand{\mr}[1]{\ensuremath{\mathrm{#1}}} % save some time writing equations pedices
+
+%packages and commands for the list of publications
+%these commands are for formatting the list of publications, if you decide to change formatting just change it once here.
+\newcommand{\aut}[1]{#1}
+\newcommand{\tit}[1]{``#1''}
+\newcommand{\conf}[2]{\textit{#1}, #2}
+\newcommand{\doi}[1]{\\doi:\href{http://doi.org/#1}{#1}}
+\newcommand{\arxiv}[2]{\href{https://arxiv.org/abs/#1}{arXiv:#1} [#2]}
+\newcommand{\jmb}{J.~MacBook}
+
+\begin{document}
+
+\include{./tex/titlepage}
+\include{./tex/abstract}
+\include{./tex/dedication}
+\include{./tex/Acknowledgement}
+\includepdf[pages=-,pagecommand={},width=\paperwidth]{./researchthesissubmission.pdf}
+
+\tableofcontents
+\listoffigures
+
+\include{./tex/publications}
+\include{./tex/ch1-intro}
+\include{./tex/ch2-example}
+\include{./tex/appendix}
+
+
+\printbibliography
+\end{document}

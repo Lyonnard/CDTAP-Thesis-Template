@@ -1,0 +1,70 @@
+\begin{titlepage}
+\newgeometry{left=2cm,right=2cm,top=1.5cm,bottom=2cm}
+%this part creates the logos on top
+\begin{figure}
+    \centering
+    \begin{minipage}{0.49\textwidth}
+        \centering
+        \includegraphics[width=0.99\textwidth]{./fig/CDT-Photonics-Logo.pdf} % first figure itself
+   \end{minipage}\hfill
+    \begin{minipage}{0.49\textwidth}
+        \centering
+        \includegraphics[width=0.5\textwidth]{./fig/HW-Logo.pdf} % second figure itself
+    \end{minipage}
+    % if you want a third figure, maybe your host company logo, just resize the minipages from 0.49\textwidth to 0.32\textwidth and add another minipage
+\end{figure}
+
+\title{My thesis} %these title and author and date will be saved in the pdf metadata but not displayed.
+\author{Leonardo~Del~Bino}
+\date{\today}
+
+	\centering % Centre everything on the title page
+
+	%------------------------------------------------
+	%	Title
+	%------------------------------------------------
+
+	\rule{\textwidth}{1.6pt}\vspace*{-\baselineskip}\vspace*{2pt} % Thick horizontal rule
+	\rule{\textwidth}{0.4pt} % Thin horizontal rule
+
+	\vspace{0.5\baselineskip} % Whitespace above the title
+
+	{\linespread{1.2}\scshape \huge A complicated\\
+		but intriguing title\\
+		spanning multiple lines\\} % Title
+
+	\vspace{0.5\baselineskip} % Whitespace below the title
+
+	\rule{\textwidth}{0.4pt}\vspace*{-\baselineskip}\vspace*{3.2pt} % Thin horizontal rule
+	\rule{\textwidth}{1.6pt} % Thick horizontal rule
+
+	\vspace{1\baselineskip} % Whitespace after the title block
+
+{\LARGE John/Jane MacBook}\\%Author
+\vspace{1\baselineskip}
+{\large Submitted for the Degree of Doctor of Engineering\\}
+\vspace{1\baselineskip}
+{\scshape \large Heriot-Watt University} \\ {\scshape School of engineering and physical sciences}
+ % Subtitle or further description
+
+	\vspace*{2\baselineskip} % Whitespace under the subtitle
+
+	%------------------------------------------------
+	%	Supervisors(s)
+	%------------------------------------------------
+
+{\Large \linespread{1.2}
+\begin{tabular}{ll}
+	{\scshape Academic supervisor}:  & George Heriot \\
+	{\scshape Industrial supervisors}: &  James Watt
+\end{tabular}
+}
+
+\vfill
+{\Large Month 2021\\}
+\vspace*{\baselineskip}
+{\footnotesize \linespread{1} The copyright in this thesis is owned by the author. Any quotation from the thesis or use of any of the information contained in it must acknowledge this thesis as the source of the quotation or information.}
+
+
+\end{titlepage}
+\restoregeometry
