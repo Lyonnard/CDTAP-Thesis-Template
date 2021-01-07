@@ -1,6 +1,8 @@
-The files in this repository are a template to write a thesis to be submitted to Heriot Watt university.
+This is a thesis template designed for the CDT in Applied Photonics and following the rules of Heriot-Watt university.
 
-## Somethin to keep in mind:
+*To download the template click on the top right button "Code" (the green one) and select "Download ZIP"*
+
+## Something to keep in mind:
 
 ### General advice
 
@@ -18,7 +20,10 @@ The files in this repository are a template to write a thesis to be submitted to
 - **Free file sync** is a freeware software to synchronize folders eg. you work folder + external hard drive + Cloud storage
 - **Inkscape** allows you to modify pdf images and create vector graphics.
 - **TeXstudio** is a LaTeX editor that works really well with structured projects like this one. It is not the only one but I used it and was pretty happy with it!
-- **JabRef** low level powerfull editor for .bib files.
+- **JabRef** low level powerful editor for .bib files.
 - **Overleaf** is a very powerful online latex editor. But remember: no internet connection = no editing!
 
-This template has been developed by Leonardo Del Bino, alumni from the CDT in Applied Photonics. If it has been useful to you or you have improvement to suggest, drop an email to:
+------
+
+This template has been developed by Leonardo Del Bino. You do not need to cite me and you can use this template as you like. If it has been useful to you or you have improvement to suggest, drop a message! https://www.linkedin.com/in/leonardodelbino/
+
